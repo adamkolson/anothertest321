@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Relative / Absolute Positioning</title>
+    <style>
+
+	.box_relative {
+		width: 600px;
+		height: 400px;
+		background-color: green;
+		position: relative;
+		top: 150px;
+		left: 100px;
+	}
+	
+	.i-am-absolute {
+		width: 150px;
+		height: 150px;
+		background-color: blue;
+		position: absolute;
+		top: 400px;
+		left: 75px;
+		z-index: 150;
+				
+	}
+	
+	.i-am-absolute-2 {
+		width: 200px;
+		height: 300px;
+		background-color: red;
+		position: absolute;
+		top: 70px;
+		left: -50px;
+		z-index: 100;
+		
+
+	}
+
+    </style>
+    <script>
+
+
+
+    </script>  
+  </head>
+  <body>
+
+	<div class="box_relative">
+	<h1>Lots of text goes here and covered up</h1>
+		<div class="i-am-absolute">
+		</div>
+		<div class="i-am-absolute-2">
+		</div>
+	</div>
+
+  </body>
+</html>
